@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21442" started-at="2020-06-04T13:05:22Z" finished-at="2020-06-04T13:05:43Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRun.TestRunnerTestNG@235b8e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="21442" started-at="2020-06-04T13:05:22Z" finished-at="2020-06-04T13:05:43Z">
+      <class name="testRun.TestRunnerTestNG">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRun.TestRunnerTestNG@235b8e]" name="setUpClass" is-config="true" duration-ms="1841" started-at="2020-06-04T13:05:22Z" finished-at="2020-06-04T13:05:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="browserInit(java.lang.String)[pri:0, instance:testRun.TestRunnerTestNG@235b8e]" name="browserInit" is-config="true" duration-ms="17289" started-at="2020-06-04T13:05:24Z" finished-at="2020-06-04T13:05:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInit -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRun.TestRunnerTestNG@235b8e]" name="runScenario" duration-ms="939" started-at="2020-06-04T13:05:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-04T13:05:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This is scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[This is a test]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testRun.TestRunnerTestNG@235b8e]" name="setup" is-config="true" duration-ms="0" started-at="2020-06-04T13:05:42Z" finished-at="2020-06-04T13:05:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRun.TestRunnerTestNG@235b8e]" name="tearDownClass" is-config="true" duration-ms="1248" started-at="2020-06-04T13:05:42Z" finished-at="2020-06-04T13:05:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRun.TestRunnerTestNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
