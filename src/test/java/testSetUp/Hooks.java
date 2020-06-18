@@ -5,20 +5,16 @@ import org.testng.ITestResult;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.Status;
 
 public class Hooks {
 	
 	@After
-	public void methodExecEnds(ITestResult result) {
-		if (result.FAILURE == result.getStatus()) {
+	public void methodExecEnds(Scenario result) {
+		if (result.getStatus()==Status.FAILED) {
 			Assert.assertTrue(false);
 		}
-		System.out.println("Method Execution ended");
-	}
-
-	@Before
-	public void Start(ITestResult result) {
-		TestSetup.browserInit("chrome");
 		System.out.println("Method Execution ended");
 	}
 
