@@ -18,6 +18,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.Status;
 import io.cucumber.messages.Messages.GherkinDocument.Feature.Step;
+import testSetUp.ReadExcel;
 import testSetUp.TestVarSetup;
 
 public class Hooks {
@@ -29,6 +30,7 @@ public class Hooks {
 		setup.fis=new FileInputStream(setup.file);
 		setup.property=new Properties();
 	setup.property.load(setup.fis);
+	ReadExcel.iterData();
 		
 	}
 	
@@ -41,5 +43,7 @@ public class Hooks {
 	System.out.println("Step Execution Completed and Reports Generated");
 	}
 	}
+	
+	
 	
 }

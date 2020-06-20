@@ -3,8 +3,11 @@ package testSetUp;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.Map;
 import java.util.Properties;
 
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 //import org.junit.After;
 //import org.junit.AfterClass;
 //import org.junit.Before;
@@ -19,6 +22,8 @@ public class TestVarSetup{
 	public static FileInputStream fis;
 	public static File file;
 	public static Properties property;
-	
+	public static Map<Object,Object> loadedData;
+	public static XSSFWorkbook wbook;
+	public static XSSFSheet dataSheet;
 
 }

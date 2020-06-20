@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-18T13:47:57.186Z",
+        "start_timestamp": "2020-06-20T13:58:25.002Z",
         "before": [
           {
             "result": {
-              "duration": 6000000,
+              "duration": 1333000000,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7905000000,
+              "duration": 7795000000,
               "status": "passed"
             },
             "line": 4,
@@ -41,7 +41,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 3000000,
+                  "duration": 9000000,
                   "status": "passed"
                 },
                 "match": {
@@ -53,9 +53,7 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat stepDefinitions.LoginTest.loadTheURL(LoginTest.java:37)\r\n\tat ✽.load the url(file:///C:/Users/Ramesh/eclipse-workspace/OpenCart/testFeature/loginTest.feature:5)\r\n",
-              "duration": 5000000,
-              "status": "failed"
+              "status": "passed"
             },
             "line": 5,
             "name": "load the url",
@@ -65,7 +63,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 711000000,
                   "status": "passed"
                 },
                 "match": {
@@ -77,7 +74,7 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 6,
             "name": "search text",
@@ -87,7 +84,7 @@
             "after": [
               {
                 "result": {
-                  "status": "skipped"
+                  "status": "passed"
                 },
                 "match": {
                   "location": "stepDefinitions.Hooks.TestExecEnds(io.cucumber.java.Scenario)"

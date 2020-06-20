@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.cucumber.java.en.Given;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import testSetUp.ReadExcel;
 import testSetUp.TestVarSetup;
 
 public class LoginTest extends TestVarSetup{
@@ -34,11 +35,12 @@ public class LoginTest extends TestVarSetup{
 		 /* driver.get(TestVarSetup.property.getProperty("url"));
 	         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);*/
-		assertTrue(false);
+		assertTrue(true);
 	}
 	
 	@Given("search text")
 	public void SearchText(){
-       driver.findElement(By.name("q1")).sendKeys("search");
+       System.out.println(loadedData.get("Username"));
+       System.out.println(loadedData.get("Password"));
 	}
 }

@@ -143,6 +143,7 @@
         <suiteXmlFiles>
         <suiteXmlFile>testng.xml</suiteXmlFile>
         </suiteXmlFiles>
+        <!-- <includes>${basedir}/src/test/java/testSetUp/DynamicTestNG.java</includes> -->
         <testFailureIgnore>true</testFailureIgnore>
     </configuration>
 </plugin>
