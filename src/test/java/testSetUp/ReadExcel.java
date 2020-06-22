@@ -2,7 +2,9 @@ package testSetUp;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -32,20 +34,27 @@ public class ReadExcel extends TestVarSetup{
 		return null;
 	}
 
-	public static void iterData() {
-		for(int i=1;i<getDataSheet().getLastRowNum();i++) {
-			if(getDataSheet().getRow(i).getCell(0).getStringCellValue().equalsIgnoreCase("Yes")) {	
-				loadedData=new HashMap<Object,Object>();
-				for(int j=1;j<getDataSheet().getRow(0).getLastCellNum();j++) {
-					loadedData.put(getDataSheet().getRow(0).getCell(j).getStringCellValue(), getDataSheet().getRow(i).getCell(j).getStringCellValue());
+	public static List<Map<Object,Object>> iterData(Map<Object,Object> dataMap) {
+		List<Map<Object,Object>> list=new ArrayList<Map<Object,Object>>();
+		int count=0;
+		dataSheet=getDataSheet();
+		for(int i=1;i<dataSheet.getLastRowNum()+1;i++) {
+			if(dataSheet.getRow(i).getCell(0).getStringCellValue().equalsIgnoreCase("Yes")) {	
+				dataMap=new HashMap<Object,Object>();
+				for(int j=1;j<dataSheet.getRow(0).getLastCellNum();j++) {
+					dataMap.put(dataSheet.getRow(0).getCell(j).getStringCellValue(), dataSheet.getRow(i).getCell(j).getStringCellValue());
+					try {
+						wbook.close();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 				}
+				list.add(count, dataMap);
+				count=count+1;
 			}
 		}
-		try {
-			wbook.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		return list;
 	}
+	
 }

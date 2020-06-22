@@ -3,6 +3,8 @@ package testSetUp;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
@@ -22,6 +24,7 @@ public class TestVarSetup{
 	public static FileInputStream fis;
 	public static File file;
 	public static Properties property;
+	public static List<Map<Object,Object>> dataList=new ArrayList<Map<Object,Object>>();
 	public static Map<Object,Object> loadedData;
 	public static XSSFWorkbook wbook;
 	public static XSSFSheet dataSheet;

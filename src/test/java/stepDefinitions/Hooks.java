@@ -30,7 +30,6 @@ public class Hooks {
 		setup.fis=new FileInputStream(setup.file);
 		setup.property=new Properties();
 	setup.property.load(setup.fis);
-	ReadExcel.iterData();
 		
 	}
 	
