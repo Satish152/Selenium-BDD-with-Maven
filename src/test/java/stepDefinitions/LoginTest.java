@@ -41,6 +41,7 @@ public class LoginTest extends TestVarSetup{
 	
 	@Given("search text")
 	public void SearchText(){
+		System.out.println(loadedData.get("running"));
 		dataList=ReadExcel.iterData(loadedData);
 		for(int i=0;i<dataList.size();i++) {
 			loadedData=dataList.get(i);
