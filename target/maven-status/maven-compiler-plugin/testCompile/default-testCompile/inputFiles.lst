@@ -1,6 +1,7 @@
-C:\Users\Ramesh\eclipse-workspace\OpenCart\src\test\java\testSetUp\TestSetup.java
+C:\Users\Ramesh\eclipse-workspace\OpenCart\src\test\java\testSetUp\DynamicTestNG.java
 C:\Users\Ramesh\eclipse-workspace\OpenCart\src\test\java\testRun\TestRunner.java
 C:\Users\Ramesh\eclipse-workspace\OpenCart\src\test\java\testRun\TestRunnerTestNG.java
-C:\Users\Ramesh\eclipse-workspace\OpenCart\src\test\java\testSetUp\Hooks.java
 C:\Users\Ramesh\eclipse-workspace\OpenCart\src\test\java\testSetUp\ReadExcel.java
+C:\Users\Ramesh\eclipse-workspace\OpenCart\src\test\java\testSetUp\TestVarSetup.java
+C:\Users\Ramesh\eclipse-workspace\OpenCart\src\test\java\stepDefinitions\Hooks.java
 C:\Users\Ramesh\eclipse-workspace\OpenCart\src\test\java\stepDefinitions\LoginTest.java

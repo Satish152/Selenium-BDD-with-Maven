@@ -1,0 +1,6 @@
+testSetUp\ReadExcel.class
+stepDefinitions\Hooks.class
+testSetUp\DynamicTestNG.class
+testRun\TestRunnerTestNG.class
+testSetUp\TestVarSetup.class
+stepDefinitions\LoginTest.class
