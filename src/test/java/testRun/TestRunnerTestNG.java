@@ -36,6 +36,11 @@ public class TestRunnerTestNG extends AbstractTestNGCucumberTests{
 	@AfterClass
 	public void scenarioEnd() {
 		System.out.println("after class exec");
-		TestVarSetup.driver.close();
+		try{
+			TestVarSetup.driver.close();
+		}catch(Exception e) {
+			//nothing
+		}
+		
 	}
 }

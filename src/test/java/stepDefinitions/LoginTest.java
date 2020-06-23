@@ -18,7 +18,7 @@ public class LoginTest extends TestVarSetup{
 
 	@Given("Open the {string} browser")
 	public void browserInit(String browserName){
-
+System.out.println("browser opened");
 		 if(browserName.equals("chrome")) {
 			 WebDriverManager.chromedriver().setup();
 			 System.setProperty("webdriver.chrome.silentOutput", "true");
@@ -33,7 +33,7 @@ public class LoginTest extends TestVarSetup{
 	
 	@Given("load the url")
 	public void loadTheURL(){
-
+		System.out.println("url opened");
 		  driver.get(TestVarSetup.property.getProperty("url"));
 	         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
@@ -41,7 +41,7 @@ public class LoginTest extends TestVarSetup{
 	
 	@Given("search text")
 	public void SearchText(){
-		System.out.println(loadedData.get("running 1"));
+		System.out.println("running");
 		dataList=ReadExcel.iterData(loadedData);
 		for(int i=0;i<dataList.size();i++) {
 			loadedData=dataList.get(i);
