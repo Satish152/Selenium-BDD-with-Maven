@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="17900" started-at="2020-06-22T16:12:12 IST" finished-at="2020-06-22T16:12:30 IST">
+  <suite name="Suite" duration-ms="13319" started-at="2020-06-23T17:57:20 IST" finished-at="2020-06-23T17:57:33 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRun.TestRunnerTestNG@9b1010]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="17900" started-at="2020-06-22T16:12:12 IST" finished-at="2020-06-22T16:12:30 IST">
+    <test name="Test" duration-ms="13319" started-at="2020-06-23T17:57:20 IST" finished-at="2020-06-23T17:57:33 IST">
       <class name="testRun.TestRunnerTestNG">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRun.TestRunnerTestNG@9b1010]" name="setUpClass" is-config="true" duration-ms="613" started-at="2020-06-22T16:12:12 IST" finished-at="2020-06-22T16:12:13 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRun.TestRunnerTestNG@9b1010]" name="setUpClass" is-config="true" duration-ms="710" started-at="2020-06-23T17:57:20 IST" finished-at="2020-06-23T17:57:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRun.TestRunnerTestNG@9b1010]" name="runScenario" duration-ms="16665" started-at="2020-06-22T16:12:13 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-22T16:12:29 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRun.TestRunnerTestNG@9b1010]" name="runScenario" duration-ms="12403" started-at="2020-06-23T17:57:21 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-23T17:57:33 IST">
           <params>
             <param index="0">
               <value>
@@ -27,14 +27,22 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at stepDefinitions.LoginTest.SearchText(LoginTest.java:44)
+at ✽.search text(file:///C:/Users/Ramesh/eclipse-workspace/OpenCart/testFeature/loginTest.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="scenarioEnd()[pri:0, instance:testRun.TestRunnerTestNG@9b1010]" name="scenarioEnd" is-config="true" duration-ms="358" started-at="2020-06-22T16:12:29 IST" finished-at="2020-06-22T16:12:30 IST">
+        <test-method status="PASS" signature="scenarioEnd()[pri:0, instance:testRun.TestRunnerTestNG@9b1010]" name="scenarioEnd" is-config="true" duration-ms="11" started-at="2020-06-23T17:57:33 IST" finished-at="2020-06-23T17:57:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioEnd -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRun.TestRunnerTestNG@9b1010]" name="tearDownClass" is-config="true" duration-ms="198" started-at="2020-06-22T16:12:30 IST" finished-at="2020-06-22T16:12:30 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRun.TestRunnerTestNG@9b1010]" name="tearDownClass" is-config="true" duration-ms="102" started-at="2020-06-23T17:57:33 IST" finished-at="2020-06-23T17:57:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
