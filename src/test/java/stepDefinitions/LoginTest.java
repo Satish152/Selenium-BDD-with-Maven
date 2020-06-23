@@ -41,7 +41,7 @@ System.out.println("browser opened");
 	
 	@Given("search text")
 	public void SearchText(){
-		System.out.println(loadedData.get("running"));
+		System.out.println(loadedData.get("running 1"));
 		dataList=ReadExcel.iterData(loadedData);
 		for(int i=0;i<dataList.size();i++) {
 			loadedData=dataList.get(i);
