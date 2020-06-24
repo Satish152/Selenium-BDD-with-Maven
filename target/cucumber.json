@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-23T12:27:21.629Z",
+        "start_timestamp": "2020-06-24T13:58:25.691Z",
         "before": [
           {
             "result": {
-              "duration": 5000000,
+              "duration": 24000000,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8074000000,
+              "duration": 8132000000,
               "status": "passed"
             },
             "line": 4,
@@ -41,7 +41,7 @@
             "after": [
               {
                 "result": {
-                  "duration": 7000000,
+                  "duration": 16000000,
                   "status": "passed"
                 },
                 "match": {
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 3019000000,
+              "duration": 3197000000,
               "status": "passed"
             },
             "line": 5,
@@ -75,9 +75,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.LoginTest.SearchText(LoginTest.java:44)\r\n\tat ✽.search text(file:///C:/Users/Ramesh/eclipse-workspace/OpenCart/testFeature/loginTest.feature:6)\r\n",
-              "duration": 3000000,
-              "status": "failed"
+              "duration": 1064000000,
+              "status": "passed"
             },
             "line": 6,
             "name": "search text",
@@ -87,7 +86,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 913000000,
                   "status": "passed"
                 },
                 "match": {

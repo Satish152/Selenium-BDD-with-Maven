@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +23,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.Status;
+import io.cucumber.messages.internal.com.google.common.net.MediaType;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;

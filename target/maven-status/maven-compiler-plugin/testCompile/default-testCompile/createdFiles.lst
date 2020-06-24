@@ -3,4 +3,5 @@ stepDefinitions\Hooks.class
 testSetUp\DynamicTestNG.class
 testRun\TestRunnerTestNG.class
 testSetUp\TestVarSetup.class
+testSetUp\FunctionLibrary.class
 stepDefinitions\LoginTest.class
